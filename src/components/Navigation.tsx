@@ -8,6 +8,7 @@ export default function Navigation({onSelect} : Props){
 
     return(
         <nav>
+          <h1>FEA AI Assistant Hub</h1>
         {sections.map((section, index) => (
         <button className="btn-section" key={index} onClick={() => onSelect(section)}>
           {section}

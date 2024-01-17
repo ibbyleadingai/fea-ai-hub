@@ -16,7 +16,6 @@ function App() {
 
   return (
     <div>
-      <h1>FEA AI Assistant Hub</h1>
       <Navigation onSelect={renderSection}/>
       {selectedSection === "Job Advert Writer" && <JobAdvertWriter />}
       {selectedSection === "Proposal Builder" && <ProposalBuilder />}
