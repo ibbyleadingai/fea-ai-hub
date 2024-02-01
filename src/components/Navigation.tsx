@@ -14,6 +14,7 @@ export default function Navigation({onSelect} : Props){
           {section}
         </button>
       ))}
+      <div className="border"></div>
         </nav>
     )
 }

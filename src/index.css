@@ -37,8 +37,10 @@ h2{
   background-color: #5a9a9c;
 }
 
-nav{
-  border: 1px solid green;
+.border{
+  border-bottom: 1px solid whitesmoke;
+    width: 100%;
+    margin-top: 20px;
 }
 
 
