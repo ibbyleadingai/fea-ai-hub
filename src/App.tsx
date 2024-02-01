@@ -8,6 +8,8 @@ import CandidateSearch from './components/CandidateSearch'
 
 function App() {
   const [selectedSection, setSelectedSection] = useState("");
+  
+  const currentYr = new Date().getFullYear();
 
   const renderSection = (section: string) => {
     setSelectedSection(section);
@@ -16,7 +18,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>Your Landing Page</h1>
+        <h1>FEA AI Assistant Hub</h1>
       </header>
       <Navigation onSelect={renderSection} />
       <main className="main-content">
@@ -26,7 +28,7 @@ function App() {
         {selectedSection === "Candidate Search" && <CandidateSearch />}
       </main>
       <footer className="footer">
-        <p>&copy; 2024 Your Company</p>
+        <p>&copy; {currentYr} Leading AI</p>
       </footer>
     </div>
   );
