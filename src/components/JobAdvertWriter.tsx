@@ -3,7 +3,7 @@ export default function JobAdvertWriter(){
     return(
         <div>
             <h2>Job Advert Writer</h2>
-            <p>Insert Iframe here</p>
+            <iframe src="feajobadverts.azurewebsites.net" width="100%" height="500" title="FEA Job Advert Writer"></iframe>
         </div>
     )
 }
