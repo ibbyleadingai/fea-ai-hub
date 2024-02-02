@@ -7,22 +7,31 @@ import InterviewAssistant from './components/InterviewAssistant'
 import CandidateSearch from './components/CandidateSearch'
 
 function App() {
+  const [selectedSection, setSelectedSection] = useState("");
+  
+  const currentYr = new Date().getFullYear();
 
-  const [selectedSection, setSelectedSection] = useState("")
-
-  const renderSection = (section:string) => {
-    setSelectedSection(section)
+  const renderSection = (section: string) => {
+    setSelectedSection(section);
   }
 
   return (
-    <div>
-      <Navigation onSelect={renderSection}/>
-      {selectedSection === "Job Advert Writer" && <JobAdvertWriter />}
-      {selectedSection === "Proposal Builder" && <ProposalBuilder />}
-      {selectedSection === "Interview Assistant" && <InterviewAssistant />}
-      {selectedSection === "Candidate Search" && <CandidateSearch />}
+    <div className="app">
+      <header className="header">
+        <h1>FEA AI Assistant Hub</h1>
+      </header>
+      <Navigation onSelect={renderSection} />
+      <main className="main-content">
+        {selectedSection === "Job Advert Writer" && <JobAdvertWriter />}
+        {selectedSection === "Proposal Builder" && <ProposalBuilder />}
+        {selectedSection === "Interview Assistant" && <InterviewAssistant />}
+        {selectedSection === "Candidate Search" && <CandidateSearch />}
+      </main>
+      <footer className="footer">
+        <p>&copy; {currentYr} Leading AI</p>
+      </footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
