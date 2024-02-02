@@ -50,4 +50,11 @@ body {
   color: white; /* Text color for the selected button */
 }
 
+.header h1 {
+  margin: 0;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow with offset and blur */
+  padding: 15px;
+}
+
 
