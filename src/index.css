@@ -17,6 +17,9 @@ body {
   text-align: center;
   padding: 20px 0px 20px 0px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-content {
@@ -57,4 +60,16 @@ body {
   padding: 15px;
 }
 
+.logo{
+  width: 200px;
+  height: 100px;
+}
 
+.logo-container-outer{
+  border: 1px solid blue;
+}
+
+.logo-container-inner{
+  border: 1px solid red;
+  display: flex;
+}

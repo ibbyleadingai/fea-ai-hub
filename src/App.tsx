@@ -18,7 +18,12 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>FEA AI Assistant Hub</h1>
+        <div className='logo-container-outer'>
+          <div className="logo-container-inner">
+            <img className="logo" alt="FEA logo" src="\src\assets\fea-logo1.png" />
+            <h1>FEA AI Assistant Hub</h1>
+          </div>
+        </div>
       </header>
       <Navigation onSelect={renderSection} />
       <main className="main-content">
