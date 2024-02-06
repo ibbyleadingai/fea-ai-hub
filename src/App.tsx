@@ -5,6 +5,7 @@ import JobAdvertWriter from './components/JobAdvertWriter'
 import ProposalBuilder from './components/ProposalBuilder'
 import InterviewAssistant from './components/InterviewAssistant'
 import CandidateSearch from './components/CandidateSearch'
+import feaLogo from './assets/fea-logo1.png'
 
 function App() {
   const [selectedSection, setSelectedSection] = useState("");
@@ -18,7 +19,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-    <img className="logo" alt="FEA logo" src="\src\assets\fea-logo1.png" />
+    <img className="logo" alt="FEA logo" src={feaLogo} />
     <div className="title-container">
       <h1>FEA AI Assistant Hub</h1>
     </div>
