@@ -22,6 +22,14 @@ body {
   justify-content: center;
 }
 
+.header h1 {
+  margin: 0;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow with offset and blur */
+  padding: 20px 0px 20px 0px;
+  width: 90%
+}
+
 .main-content {
   flex-grow: 1;
   padding: 20px;
@@ -53,23 +61,13 @@ body {
   color: white; /* Text color for the selected button */
 }
 
-.header h1 {
-  margin: 0;
-  font-size: 2em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow with offset and blur */
-  padding: 15px;
-}
-
 .logo{
-  width: 200px;
-  height: 100px;
+  width: 100px;
+  height: 50px;
+  margin-left: 20px;
 }
 
-.logo-container-outer{
-  border: 1px solid blue;
-}
-
-.logo-container-inner{
-  border: 1px solid red;
-  display: flex;
+.title-container{
+  flex: 1;
+  text-align: center;
 }
