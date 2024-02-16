@@ -6,8 +6,8 @@ export default function JobAdvertWriter(){
             {/* <iframe src="https://laisandbox.azurewebsites.net/"
             width="980" height="600" allow="fullscreen" title="TRI AI Assistant"
             sandbox="allow-same-origin allow-scripts"></iframe> */}
-            <object data="https://laisandbox.azurewebsites.net/" width="980" height="400">
-            <embed src="https://laisandbox.azurewebsites.net/" width="980" height="400"></embed>
+            <object data="https://laisandbox.azurewebsites.net/" width="980" height="600">
+            <embed src="https://laisandbox.azurewebsites.net/" width="980" height="600"></embed>
             </object>
         </div>
     )
